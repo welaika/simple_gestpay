@@ -8,6 +8,7 @@ AllCops:
 
 Metrics/BlockLength:
   Exclude:
+    - '*.gemspec'
     - 'spec/**/*'
 
 Metrics/LineLength:
