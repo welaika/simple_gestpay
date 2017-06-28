@@ -33,14 +33,17 @@ module SimpleGestpay
   end
 
   def self.configuration
-    @configuration ||= Configuration.new
+    raise MissingConfiguration if @configuration.blank?
+    @configuration
   end
 
   def self.configuration=(config)
+    raise InvalidConfiguration.new(config) unless config.valid?
     @configuration = config
   end
 
   def self.configure
-    yield configuration
+    yield(@configuration ||= Configuration.new)
+    raise InvalidConfiguration.new(@configuration) unless @configuration.valid?
   end
 end
