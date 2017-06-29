@@ -3,6 +3,7 @@
 require 'active_support'
 require 'active_support/core_ext'
 require 'active_model'
+require 'active_interaction'
 require 'savon'
 
 require 'simple_gestpay/version'

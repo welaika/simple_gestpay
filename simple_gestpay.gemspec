@@ -26,6 +26,7 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = '>= 2.3'
 
+  spec.add_runtime_dependency 'active_interaction', '~> 3.5', '>= 3.5.2'
   spec.add_runtime_dependency 'activesupport', '~> 5.0', '>= 5.0.4', '< 6'
   spec.add_runtime_dependency 'activemodel', '~> 5.0', '>= 5.0.4', '< 6'
   spec.add_runtime_dependency 'savon', '~> 2.11', '>= 2.11.1'
