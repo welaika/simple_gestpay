@@ -3,7 +3,7 @@
 # http://api.gestpay.it/#payment-type-codes
 
 module SimpleGestpay
-  CURRENCIES = {
+  CURRENCY_CODES = {
     'AED' => 187,
     'AUD' => 109,
     'BGN' => 262,

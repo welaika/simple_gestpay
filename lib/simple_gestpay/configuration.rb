@@ -12,6 +12,9 @@ module SimpleGestpay
     # Available values: [:test, :production]. Default to `:test`
     attr_accessor :environment
 
+    # You can use a proxy for soap connections
+    attr_accessor :proxy
+
     # Default language. See `languages.rb` for available options. Default to Italian.
     attr_accessor :default_language
 
@@ -21,8 +24,9 @@ module SimpleGestpay
     validates :shop_login, :environment, presence: true
     validates :environment, inclusion: { in: %i[test production] }
     validates :shop_login, length: { maximum: SHOP_LOGIN_MAX_LENGTH }
-    validates :default_language, inclusion: { in: LANGUAGES }, allow_blank: true
-    validates :default_currency, inclusion: { in: CURRENCIES }, allow_blank: true
+    validates :default_language, inclusion: { in: LANGUAGE_CODES }, allow_blank: true
+    validates :default_currency, inclusion: { in: CURRENCY_CODES }, allow_blank: true
+    validates :proxy, format: { with: URI.regexp(%w[http https]) }, allow_blank: true
 
     def initialize(attributes = {})
       super

@@ -3,7 +3,7 @@
 # http://api.gestpay.it/#language-codes
 
 module SimpleGestpay
-  LANGUAGES = {
+  LANGUAGE_CODES = {
     'it' => 1,
     'en' => 2,
     'es' => 3,
