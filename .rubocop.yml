@@ -19,3 +19,6 @@ Style/Documentation:
 
 Style/RaiseArgs:
   EnforcedStyle: compact
+
+Style/FormatStringToken:
+  EnforcedStyle: template
