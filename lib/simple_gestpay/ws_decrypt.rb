@@ -19,7 +19,7 @@ module SimpleGestpay
     def message
       {
         shop_login: SimpleGestpay.configuration.shop_login,
-        crypted_string: crypted_string
+        'CryptedString' => crypted_string
       }
     end
   end
