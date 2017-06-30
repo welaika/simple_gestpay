@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module SimpleGestpay
-  class WsDerypt < ActiveInteraction::Base
+  class WsDecrypt < ActiveInteraction::Base
     object :soap_client, class: WsCryptDecryptSoapClient,
                          default: -> { WsCryptDecryptSoapClient.new }
     string :crypted_string
