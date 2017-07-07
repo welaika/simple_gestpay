@@ -3,8 +3,8 @@
 module SimpleGestpay
   module SoapClient
     DEFAULT_CONFIGURATION = {
-      open_timeout: 5.seconds,
-      read_timeout: 5.seconds,
+      open_timeout: 20.seconds,
+      read_timeout: 20.seconds,
       log: true,
       log_level: :debug,
       pretty_print_xml: true
