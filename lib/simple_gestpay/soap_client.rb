@@ -11,7 +11,7 @@ module SimpleGestpay
     }.freeze
 
     def default_configuration
-      config = DEFAULT_CONFIGURATION
+      config = DEFAULT_CONFIGURATION.deep_dup
       if SimpleGestpay.configuration.proxy.present?
         config[:proxy] = SimpleGestpay.configuration.proxy
       end
