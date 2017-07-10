@@ -21,7 +21,7 @@ module SimpleGestpay
     private
 
     def wsdl_url
-      WSDL_URL[SimpleGestpay.configuration.environment]
+      WSDL_URL[SimpleGestpay.configuration.environment.to_sym]
     end
   end
 end
