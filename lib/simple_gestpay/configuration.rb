@@ -22,7 +22,7 @@ module SimpleGestpay
     attr_accessor :default_currency
 
     validates :shop_login, :environment, presence: true
-    validates :environment, inclusion: { in: %i[test production] }
+    validates :environment, inclusion: { in: %w[test production] }
     validates :shop_login, length: { maximum: SHOP_LOGIN_MAX_LENGTH }
     validates :default_language, inclusion: { in: LANGUAGE_CODES }, allow_blank: true
     validates :default_currency, inclusion: { in: CURRENCY_CODES }, allow_blank: true
@@ -30,7 +30,7 @@ module SimpleGestpay
 
     def initialize(attributes = {})
       super
-      @environment ||= :test
+      @environment ||= 'test'
       @default_language ||= 'it'
       @default_currency ||= 'EUR'
     end
