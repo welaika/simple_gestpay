@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Simple Gestpay library'
   spec.description   = 'Unofficial Banca Sella Gestpay library. \
-                        It supports only Gestpay payment page method)'
+                        It supports only Gestpay payment page method.'
   spec.homepage      = 'https://github.com/welaika/simple_gestpay'
   spec.license       = 'MIT'
 
