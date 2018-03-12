@@ -42,4 +42,4 @@ The gem is available as open source under the terms of the [MIT License](http://
 
 Everyone interacting in the SimpleGestpay project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/welaika/simple_gestpay/blob/master/CODE_OF_CONDUCT.md).
 
-Copyright (c) 2017 [weLaika](https://dev.welaika.com)
+Copyright (c) 2017-2018 [weLaika](https://dev.welaika.com)
