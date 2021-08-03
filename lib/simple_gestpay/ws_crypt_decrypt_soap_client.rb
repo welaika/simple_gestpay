@@ -7,7 +7,7 @@ module SimpleGestpay
     delegate :call, to: :client
 
     WSDL_URL = {
-      test: 'https://testecomm.sella.it/gestpay/GestPayWS/WsCryptDecrypt.asmx?wsdl',
+      test: 'https://sandbox.gestpay.net/gestpay/GestPayWS/WsCryptDecrypt.asmx?wsdl',
       production: 'https://ecommS2S.sella.it/gestpay/GestPayWS/WsCryptDecrypt.asmx?wsdl'
     }.freeze
 
