@@ -4,7 +4,7 @@ module SimpleGestpay
   class PaymentPage
     URL_FORMAT = {
       'test' =>
-        'https://testecomm.sella.it/pagam/pagam.aspx?a=%{shop_login}&b=%{encrypted_string}',
+        'https://sandbox.gestpay.net/pagam/pagam.aspx?a=%{shop_login}&b=%{encrypted_string}',
       'production' =>
         'https://ecomm.sella.it/pagam/pagam.aspx?a=%{shop_login}&b=%{encrypted_string}'
     }.freeze
